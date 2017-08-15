@@ -1,3 +1,7 @@
+.grayBgColor{
+	min-height: 100vh;
+	background-color: #f0f0f0;
+}
 .nav{
 	position:fixed;
 	top:0;
@@ -176,64 +180,72 @@
 
 /*反馈列表*/
 .feedback_list{
-	padding: 0.533333333rem;
-	font-size: 0.37333333rem;
-	margin-top: 1.33333333rem;
-	line-height: 0.866666666rem;
+	padding-top: 1.33333333rem;
 }
 .feedback_item{
-	height: 2.7rem;
+	display: inline-block;
 	width: 100%;
-	border:1px solid #000;
-	border-radius: 0.266666666rem;
-	padding-left: 0.266666666rem; 
+	padding: 0 0.4rem 0.4rem 0.4rem; 
 	box-sizing: border-box;
-	background-color: #99FF99;
 	position: relative;
 	margin-bottom: 0.266666666rem;
+	background-color: #fff;
 }
-.feedback_item .status{
-	float: right;
-	margin-right: 1.066666666rem;
+.feedback_item .problemBrief{
+	display: inline-block;
+    margin: 0.4rem 0;
+	font-size: 0.4266666666rem;
+	color: #333;
 }
-.feedback_item .pro_info div{
-	height: 0.866666666rem;
-	overflow: hidden;
-	text-overflow:ellipsis;
-	white-space: nowrap;
-	padding-right: 25%;
+.feedback_item .pro_info .date{
+	font-size: 0.346666666rem;
+	color: #666;
+}
+.feedback_item .pro_info .location{
+	margin-top: 0.13333333333rem;
+	color: #666;
+}
+.feedback_item .pro_info .location img{
+	height: 0.346666666rem;
+	vertical-align: middle;
+}
+.feedback_item .pro_info .location span{
+	font-size: 0.346666666rem;
+	vertical-align: middle;
 }
 .feedback_item .proDetail_btn{
-	width: 1.333333333rem;
-	height: 0.866666666rem;
-	background-color: #99CCFF;
-	border: 1px solid #000;
-	border-radius: 0.266666666rem;
-	font-size: 0.37333333rem;
+	height: 0.48rem;
 	position: absolute;
-	right: 0.533333333rem;
-	bottom: 0.4333333333rem;
-	text-align: center;
-	color: #000;
+	right: 0.4rem;
+	top: 50%;
+	margin-top: -0.24rem;
 }
 
 /*动态详情*/
 .dynamicDetail{
 	margin-top: 1.33333333rem;
-	padding: 0.266666666rem;
-	font-size: 0.37333333rem;
+	padding: 0.4rem;
+	font-size: 0.4rem;
+	color: #333;
 }
 .dynamicDetail>p{
-	text-align: center;
+	
 }
 .dynamicDetail img{
-	margin-top: 0.266666666rem;
+	margin-top: 0.4rem;
 	width: 100%;
-	height: 6.7rem;
+	height: 6.1333333333rem;
+}
+.dynamicDetail .sourceTime{
+	color: #797979;
+	font-size: 0.378378rem;
+	margin-top: 0.2666666rem;
+}
+.dynamicDetail_info{
+	margin-top: 0.4rem;
 }
 .dynamicDetail_info p{
-	font-size: 0.37333333rem;
-	text-indent: 1rem;
+	text-indent: .85rem;
 }
 
 /*城管动态*/
