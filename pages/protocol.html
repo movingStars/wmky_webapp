@@ -11,26 +11,41 @@
 </head>
 <body>
 
-	<!-- 导航栏 -->
-    <div class="nav">
-    	<img src="../img/back_icon.png" id="backIcon">
-    	举报投诉
+    <div class="grayBgColor">
+        
+        <!-- 导航栏 -->
+        <div class="nav">
+            <img src="../img/back_icon.png" id="backIcon">
+            举报投诉
+        </div>
+
+        <!-- 举报信息 -->
+        <form class="protocol_form">
+            <input class="protocol_input" type="text" name="location" placeholder="问题简述，不超过20个字符">
+            <input class="protocol_input" type="text" name="bref" placeholder="抓拍位置">
+            <textarea class="pro_textarea" maxlength="200" name="detail" placeholder="问题详情，不超过200个字符"></textarea>
+
+            <div class="upLoadList">
+                <div class="upLoadItem">
+                    <img src="../img/newsImg.jpg" class="newImg"/>
+                    <img src="../img/deleteImg.png" class="deleteImg"/>
+                </div>
+                <div class="upLoadItem">
+                    <img src="../img/newsImg.jpg" class="newImg"/>
+                    <img src="../img/deleteImg.png" class="deleteImg" />
+                </div>
+                <img src="../img/upLoadIcon.png" class="addImg"/>
+            </div>
+
+            <div class="pro_botton">
+                <button>上报</button>
+            </div>
+
+        </form>
+
     </div>
 
-    <!-- 举报信息 -->
-    <form class="protocol_form">
-    	<input class="protocol_input" type="text" name="location" placeholder="抓拍位置">
-    	<input class="protocol_input" type="text" name="bref" placeholder="问题简述，不超过20个字符">
-    	<textarea class="pro_textarea" maxlength="200" name="detail" placeholder="问题详情，不超过200个字符"></textarea>
-
-    	<div class="upLoadList">
-    		<img src="../img/newsImg.jpg" class="upLoadItem">
-    		<img src="../img/upLoad_icon.png" class="addImg">
-    	</div>
-
-    	<button class="pro_botton">上报</button>
-
-    </form>
+	
 
     <script type="text/javascript" src="../js/common.js"></script>
 
